@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawan Rafka | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">Rawan<span>Rafka</span></div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#social-media">Social Media</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <a href="cv.html" target="_blank">CV</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h1>Hi, I'm <span>Rawan Said Rafka</span></h1>
+        <p><i class="fas fa-graduation-cap"></i> Information Engineering student | <i class="fas fa-microchip"></i> AI & IoT Developer | <i class="fas fa-paint-brush"></i> Creative Technologist</p>
+        <p><i class="fas fa-university"></i> International University of Science & Technology</p>
+        <a href="#about" class="btn"><i class="fas fa-user"></i> Discover My Journey</a>
+    </div>
+</section>
+
+<div class="container">
+    
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2 class="section-title"><i class="fas fa-user-circle"></i> About Me</h2>
+        <div class="about-card">
+            <p>🎓 I am an Information Engineering student at the International University of Science & Technology, passionate about using <strong>AI and IoT</strong> to solve real-world problems, especially in <strong>healthcare</strong>.</p>
+            <p>💡 I love building smart systems that make a difference, from pediatric health monitoring to AI-generated product design and creative content production.</p>
+            <p>🚀 I'm actively looking for opportunities in <strong>AI development, IoT engineering, or technical content creation</strong> where I can combine my technical skills with creativity and innovation.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h2>
+        <div class="experience-card">
+            <div class="exp-header">
+                <h3><i class="fas fa-robot"></i> AI & IoT Trainee Engineer</h3>
+                <p class="company"><i class="fas fa-building"></i> expentech · Damascus, Bab Touma (Borj Al-Rous)</p>
+                <p class="date"><i class="fas fa-calendar-alt"></i> Practical Training | Official Evaluation</p>
+            </div>
+            <div class="exp-details">
+                <p>During my practical training at <strong>expentech</strong>, I worked under the supervision of a senior engineer on a real-world AI-driven project. I successfully developed and delivered the assigned tasks, receiving an <strong>official written evaluation</strong> from the company director. This evaluation detailed all the work I completed and was presented to my university committee as part of my practical training grade.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Built a complete AI pipeline using <strong>Python</strong>.</li>
+                    <li><i class="fas fa-check-circle"></i> Implemented <strong>License Plate Detection & OCR</strong> system using YOLO and EasyOCR.</li>
+                    <li><i class="fas fa-check-circle"></i> Integrated hardware with software for real-time data processing.</li>
+                    <li><i class="fas fa-check-circle"></i> Received official company recognition and a signed performance evaluation.</li>
+                </ul>
+                <div class="exp-tech">
+                    <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="tech-tag">YOLO</span>
+                    <span class="tech-tag">EasyOCR</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag"><i class="fas fa-microchip"></i> IoT</span>
+                    <span class="tech-tag">expentech</span>
+                </div>
+                <!-- PDF Preview Link (opens in modal) -->
+                <div class="eval-link">
+                    📄 <a href="#" id="viewPdfBtn"><i class="fas fa-file-pdf"></i> View Official Evaluation Letter (signed by Director)</a>
+                    <span class="note">(click to preview)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Modal for Evaluation Letter -->
+    <div id="pdfModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="pdfFrame" src="images/evaluation-letter.pdf" width="100%" height="500px"></iframe>
+        </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <section id="certificates" class="section">
+        <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+        <div class="certificates-grid">
+            <div class="cert-card">
+                <i class="fas fa-code"></i>
+                <h3>Python Programming</h3>
+                <p>Online Course Certification</p>
+                <span class="cert-date">Self-paced · Completed</span>
+            </div>
+            <div class="cert-card cert-clickable" onclick="openCertModal('images/ai-certificate.png')">
+                <i class="fas fa-brain"></i>
+                <h3>Artificial Intelligence <i class="fas fa-search-plus" style="font-size: 0.8rem;"></i></h3>
+                <p>AI Course Certification</p>
+                <span class="cert-date">Click to view certificate →</span>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Practical Training</h3>
+                <p>expentech · Official Evaluation</p>
+                <span class="cert-date">Signed by Director</span>
+            </div>
+        </div>
+    </section>
+    <!-- Start Projects Section -->
+<section id="projects" class="section">
+    <h2 class="section-title"><i class="fas fa-project-diagram"></i> Key Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+    <div class="project-info">
+        <h3 class="project-title"><i class="fas fa-hotel"></i> Sunshine Hotel - Complete Hotel Website</h3>
+        <p>A fully functional 5-page hotel booking website. Features: main page, personal info form, room catalog (Standard, Deluxe, Executive Suite), booking form with extra services (breakfast, pool, spa), and confirmation page. Built with pure HTML5 and CSS3 with seamless navigation between pages.</p>
+        <div class="project-tech">
+            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="tech-tag">Multi-page Website</span>
+            <span class="tech-tag">Forms</span>
+            <span class="tech-tag">Responsive Design</span>
+        </div>
+    </div>
+</div>
+        
+        <!-- PAGES Café Reservation System -->
+        <div class="project-card">
+            <div class="project-info">
+                <h3 class="project-title"><i class="fas fa-mug-hot"></i> PAGES Café: Complete Reservation System</h3>
+                <p>A full-stack web application for café table management. Features a user-friendly booking interface and a secure admin dashboard. Integrates with Google Sheets for live data tracking, sends automatic email notifications, supports English/Arabic, and exports data to Excel. Deployed live on Vercel.</p>
+                <div class="project-tech">
+                    <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="tech-tag">Google Sheets API</span>
+                    <span class="tech-tag">Full-Stack</span>
+                    <span class="tech-tag">Vercel</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- وإذا بدك تكرري نفس الشي للمشاريع التانية ... -->
+        <!-- مثال لـ License Plate Detection -->
+        <div class="project-card">
+            <div class="project-info">
+                <h3 class="project-title"><i class="fas fa-car"></i> License Plate Detection & OCR</h3>
+                <p>YOLO + EasyOCR pipeline for vehicle license plate detection and text extraction. Built during practical training at expentech.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">YOLO</span>
+                    <span class="tech-tag">EasyOCR</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">OpenCV</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Projects Section -->
+
+    <!-- Lightbox Modal for Certificate Image -->
+    <div id="certModal" class="cert-modal">
+        <span class="cert-modal-close" onclick="closeCertModal()">&times;</span>
+        <img class="cert-modal-content" id="certModalImg">
+    </div>
+
+    <section id="projects" class="section">
+        <h2 class="section-title"><i class="fas fa-project-diagram"></i> Graduation & Key Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title"><i class="fas fa-heartbeat"></i> Pediatric Health Monitoring System</h3>
+                    <p>Integrated system measuring heart rate, SpO2, temperature, and foot pressure for children. Real-time alerts for early intervention.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag"><i class="fas fa-microchip"></i> IoT</span>
+                        <span class="tech-tag">Sensors</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Mobile App</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title"><i class="fas fa-shoe-prints"></i> Smart Flatfoot Diagnosis System</h3>
+                    <p>Smart shoe with 10 pressure sensors connected to a diagnostic app for early flatfoot detection in children.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Embedded Systems</span>
+                        <span class="tech-tag">Pressure Sensors</span>
+                        <span class="tech-tag">Flutter</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title"><i class="fas fa-fill-drip"></i> AI Lip Gloss - SQUOOSH</h3>
+                    <p>AI-generated lip gloss design focusing on comfort, hydration, and modern aesthetic. Created for AI course graduation.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Generative AI</span>
+                        <span class="tech-tag">Product Design</span>
+                        <span class="tech-tag">Innovation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title"><i class="fas fa-car"></i> License Plate Detection & OCR</h3>
+                    <p>YOLO + EasyOCR pipeline for vehicle license plate detection and text extraction. Built during practical training at expentech.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">YOLO</span>
+                        <span class="tech-tag">EasyOCR</span>
+                        <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title"><i class="fas fa-video"></i> Short Video Editing Service</h3>
+                    <p>Team project offering Reels/TikTok editing services. Focus on fast-paced, engaging social media content.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Premiere Pro</span>
+                        <span class="tech-tag">DaVinci Resolve</span>
+                        <span class="tech-tag"><i class="fas fa-share-alt"></i> Social Media</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Management Section -->
+    <section id="social-media" class="section">
+        <h2 class="section-title"><i class="fab fa-instagram"></i> Social Media Management</h2>
+        <div class="experience-card" style="border-left-color: #e11d48;">
+            <div class="exp-header">
+                <h3><i class="fas fa-video"></i> Social Media Content Creator & Video Editor</h3>
+                <p class="company"><i class="fab fa-instagram"></i> Instagram Pages Management · Previous Experience</p>
+            </div>
+            <div class="exp-details">
+                <p>I have the ability to professionally manage social media pages, create and publish short educational videos (Reels) in either <strong>formal or funny/modern style</strong> that keeps up with current trends. I worked with a team on two Instagram pages, where I was responsible for all video content and Reels production.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Managing and scheduling social media content calendars</li>
+                    <li><i class="fas fa-check-circle"></i> Creating engaging Reels (educational + entertaining)</li>
+                    <li><i class="fas fa-check-circle"></i> Video editing using Premiere Pro & DaVinci Resolve</li>
+                    <li><i class="fas fa-check-circle"></i> Adapting tone of voice (formal / funny / trendy)</li>
+                    <li><i class="fas fa-check-circle"></i> Team collaboration on 2 successful Instagram pages</li>
+                </ul>
+                <div class="exp-tech">
+                    <span class="tech-tag"><i class="fab fa-instagram"></i> Instagram</span>
+                    <span class="tech-tag"><i class="fas fa-video"></i> Reels</span>
+                    <span class="tech-tag"><i class="fas fa-cut"></i> Video Editing</span>
+                    <span class="tech-tag">Content Strategy</span>
+                    <span class="tech-tag">Trend Analysis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title"><i class="fas fa-code"></i> Technical Skills</h2>
+        <ul class="skills-list">
+            <li><i class="fab fa-html5"></i> HTML/CSS/JS</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li>YOLO</li>
+            <li>EasyOCR</li>
+            <li><i class="fas fa-microchip"></i> IoT & Sensors</li>
+            <li><i class="fab fa-arduino"></i> Arduino</li>
+            <li><i class="fab fa-flutter"></i> Flutter</li>
+            <li><i class="fas fa-brain"></i> AI & Generative AI</li>
+            <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+            <li><i class="fas fa-cut"></i> Video Editing</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact-info">
+            <h2><i class="fas fa-envelope"></i> Let's Connect</h2>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:rowanrefka@gmail.com">rowanrefka@gmail.com</a></p>
+            <div class="github-stats">
+                <p><i class="fab fa-github"></i> Check my code on GitHub →</p>
+                <a href="https://github.com/rawan-refka" target="_blank" class="github-link"><i class="fab fa-github"></i> github.com/rawan-refka</a>
+            </div>
+            <div class="cv-download">
+                <a href="images/Rawan-Rafka-CV.pdf" download class="btn-cv">
+                    <i class="fas fa-download"></i> Download My CV (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p><i class="fas fa-heart" style="color: #e11d48;"></i> © 2026 Rawan Said Rafka — Built with passion for technology & innovation</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    // PDF Modal for Evaluation Letter
+    var modal = document.getElementById("pdfModal");
+    var btn = document.getElementById("viewPdfBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function(e) {
+        e.preventDefault();
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Certificate Image Modal (Lightbox)
+    function openCertModal(imgSrc) {
+        var certModal = document.getElementById("certModal");
+        var certModalImg = document.getElementById("certModalImg");
+        certModal.style.display = "block";
+        certModalImg.src = imgSrc;
+    }
+
+    function closeCertModal() {
+        var certModal = document.getElementById("certModal");
+        certModal.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
